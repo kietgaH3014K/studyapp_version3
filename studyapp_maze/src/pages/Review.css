@@ -1,0 +1,105 @@
+.review-container {
+  width: 400px;
+  margin: 40px auto;
+  background-color: #ece8e4; /* nền xám nhạt */
+  padding: 20px;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.review-container h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.review-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.review-container select,
+.review-container input,
+.review-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.review-container textarea {
+  height: 80px;
+  resize: none;
+}
+
+.review-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #d1d1d1;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+/* Thêm vào Review.css */
+.auth-required-message {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.auth-required-message p {
+  font-size: 18px;
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.status-msg.error {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.status-msg.warning {
+  color: #856404;
+  background-color: #fff3cd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.status-msg.success {
+  color: #155724;
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}

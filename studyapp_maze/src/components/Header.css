@@ -1,0 +1,234 @@
+/* Header.css */
+.header {
+  background-color: #F0EEEB;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.logo {
+  height: 95px;
+  object-fit: contain;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+nav a {
+  color: #7A5C3D;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #5B422A;
+}
+
+body {
+  margin: 0;
+  padding-top: 90px;
+  overflow-x: hidden;
+}
+/* Ảnh nền mờ */
+.hero-background {
+  width: 100%;
+  height: auto;
+  opacity: 0.1;
+  display: block;
+}
+
+/* Chữ nằm giữa ảnh */
+.hero-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: #815C32;
+  z-index: 2;
+}
+/* Khối chứa toàn bộ header + banner */
+.header-wrapper {
+  position: relative;
+}
+
+/* Khối hero chứa ảnh và chữ */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Style cho tên người dùng */
+nav span.username {
+  color: #5c3d00; /* màu chữ giống menu */
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+/* Style cho nút đăng xuất */
+nav button.logout-btn {
+  background: none;
+  border: none;
+  color: #5c3d00;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+nav button.logout-btn:hover {
+  color: #a86f00; /* màu hover giống menu link */
+  text-decoration: underline;
+}
+
+/* --- User section trong Header --- */
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* khoảng cách giữa username và nút logout */
+  margin-left: 30px; /* tách khỏi menu link */
+}
+
+/* Style tên người dùng */
+.user-section .username {
+  color: #7A5C3D;       /* giống màu menu link */
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Style nút đăng xuất */
+.user-section .logout-btn {
+  background: none;
+  border: none;
+  color: #7A5C3D;       /* giống màu menu link */
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.user-section .logout-btn:hover {
+  color: #5B422A;       /* giống hover menu */
+  text-decoration: underline;
+}
+
+
+/* .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 70px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+} */
+
+.nav-links a:hover {
+  color: #fa8943;
+}
+
+/* 
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.username {
+  color: #fff;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logout-btn:hover {
+  background: #fff;
+  color: #1e1e1e;
+}
+
+
+nav a:hover {
+  color: #00c3ff;
+} */
+
+/* link chung cho menu + account */
+.nav-link {
+  color: #7A5C3D;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #5B422A;
+}
+
+/* trạng thái đang ở trang hiện tại */
+.nav-link.active {
+  text-decoration: underline;
+  color: #5B422A;
+}
+
+/* khu vực user bên phải */
+.user-section .username {
+  color: #5c3d00;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.user-section .logout-btn {
+  background: none;
+  border: none;
+  color: #5c3d00;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.user-section .logout-btn:hover {
+  color: #a86f00;
+  text-decoration: underline;
+}
+

@@ -1,0 +1,147 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #f6f2ee;
+  color: #5b3920;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.newsletter {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.newsletter-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.newsletter-sub {
+  font-size: 14px;
+  color: #F0EEEB;
+  margin-bottom: 20px;
+}
+
+.newsletter-form input {
+  padding: 8px 12px;
+  border: 1px solid #F0EEEB;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.newsletter-form button {
+  padding: 8px 14px;
+  background-color: #5b3920;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.footer-column p {
+  margin: 4px 0;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #F0EEEB;
+  padding-top: 20px;
+}
+
+.footer-bottom img {
+  width: 200px;
+  margin-bottom: 8px;
+}
+.footer-column a {
+  color: #5b3920; /* Màu chữ nâu đồng bộ với văn bản */
+  text-decoration: none; /* Bỏ gạch dưới */
+  font-size: 20px; /* Đảm bảo cùng kích cỡ với các <p> khác */
+}
+
+.footer-column a:hover {
+  color: #8a5d3d; /* Màu khi rê chuột (hover) */
+  text-decoration: underline; /* Có thể bỏ nếu không muốn gạch dưới khi hover */
+}
+
+/* Nút gửi & input (nếu muốn nhẹ nhàng hơn) */
+.newsletter-form input,
+.newsletter-form button {
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.newsletter-form button {
+  background: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform .05s ease, opacity .2s ease;
+}
+.newsletter-form button:hover { opacity: .95; }
+.newsletter-form button:active { transform: translateY(1px) scale(.99); }
+.newsletter-form button[disabled] { opacity: .6; cursor: not-allowed; }
+
+/* Toast cảm ơn */
+.toast {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #b7f0b0;
+  background: #ecffe8;
+  color: #0a2300;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  animation:
+    toast-in .18s ease-out,
+    toast-hold 2.2s linear,
+    toast-out .18s ease-in 2.2s forwards;
+  z-index: 9999;
+}
+.toast-success { /* giữ class để sau này phân loại trạng thái nếu cần */ }
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(10px) scale(.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes toast-out {
+  to { opacity: 0; transform: translateY(10px) scale(.98); }
+}
+@keyframes toast-hold { from { } to { } } /* chỉ giữ thời lượng */
+
+.checkmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #fff;
+  font-weight: 700;
+  animation: pop .2s ease-out;
+}
+@keyframes pop { from { transform: scale(.6); } to { transform: scale(1); } }

@@ -1,0 +1,122 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  color: #F0EEEB;
+}
+
+/* App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background-color: #F0EEEB;
+  color: #815C32;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  color: #815C32;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+  color: #815C32;
+}
+
+/* Hero Section */
+.hero {
+  flex: 1;
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #eaeaea;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+  background-color: #F0EEEB;
+  color: #815C32;
+  text-align: center;
+  padding: 20px;
+
+.review-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+}}
+
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.submit-btn:hover {
+  background-color: #734926;
+}
+

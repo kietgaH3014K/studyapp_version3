@@ -1,0 +1,250 @@
+/* Vùng chứa ảnh nền và tiêu đề */
+.schedule-hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+/* Ảnh nền mờ */
+.hero-background {
+  width: 100%;
+  height: 600px; /* chiều cao cố định cho ảnh */
+  object-fit: cover;
+  opacity: 0.1;
+  display: block;
+}
+
+/* Chữ nằm ngay giữa ảnh */
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* căn giữa dọc */
+  align-items: center;      /* căn giữa ngang */
+  color: #815C32;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin: 10px 0 0;
+  line-height: 1.5;
+}
+
+/* Phần nội dung sau ảnh nền */
+.after-image {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.after-image h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.after-image p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Lịch học từng tuần */
+.schedule-container {
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.schedule-title {
+  font-size: 32px;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #5b3920;
+}
+
+/* Block mỗi tuần */
+.week-block {
+  margin-bottom: 40px;
+  border-left: 6px solid #007bff;
+  padding-left: 16px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.week-title {
+  margin-bottom: 16px;
+  color: #007bff;
+  font-size: 22px;
+}
+
+/* Grid 7 ngày trong tuần */
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+/* Card mỗi ngày */
+.day-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  min-height: 180px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-break: break-word;
+}
+
+.day-card h4 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+
+.no-task {
+  color: #999;
+  font-style: italic;
+}
+
+.status-tag {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+
+.status-tag.pending {
+  background-color: #ffc107; /* vàng */
+}
+
+.status-tag.done {
+  background-color: #28a745; /* xanh lá */
+}
+
+.status-tag.todo {
+  background: #ffe0e0;
+  color: #912222;
+}
+
+a {
+  word-break: break-word;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.schedule-container {
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .schedule-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .week-block {
+    margin-bottom: 40px;
+    border-left: 6px solid #007bff;
+    padding-left: 16px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .week-title {
+    margin-bottom: 16px;
+    color: #007bff;
+    font-size: 22px;
+  }
+  
+  .day-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 16px;
+  }
+  
+  .day-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    min-height: 180px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-break: break-word;
+  }
+  
+  .day-card h4 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .no-task {
+    color: #999;
+    font-style: italic;
+  }
+  
+  .status-tag {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .status-tag.pending {
+    background-color: #ffc107; /* vàng */
+  }
+  
+  .status-tag.done {
+    background-color: #28a745; /* xanh lá */
+  }
+  
+  a {
+    word-break: break-word;
+  }
+  
+  .error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+  }
+  

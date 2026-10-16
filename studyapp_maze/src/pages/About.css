@@ -1,0 +1,33 @@
+.about-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9; /* nền trắng xám nhạt */
+  border-radius: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-container p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about-container li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
